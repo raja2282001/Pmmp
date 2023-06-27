@@ -9,6 +9,7 @@ const employeeRoutes = require('./routes/EmployeeRoutes')
 app.use('/user',userRoutes)
 app.use('/employee',employeeRoutes)
 
+mongoose.set('strictQuery', false);
 
 mongoose.connect("mongodb://mongo:3NzTnBVnvx999zA941RZ@containers-us-west-180.railway.app:5657",{},(err)=>{
     if(err){
