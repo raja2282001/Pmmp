@@ -10,7 +10,7 @@ app.use('/user',userRoutes)
 app.use('/employee',employeeRoutes)
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/pms_nodep2",{},(err)=>{
+mongoose.connect("mongodb://mongo:3NzTnBVnvx999zA941RZ@containers-us-west-180.railway.app:5657",{},(err)=>{
     if(err){
         console.log("error in db connections....")
     }
